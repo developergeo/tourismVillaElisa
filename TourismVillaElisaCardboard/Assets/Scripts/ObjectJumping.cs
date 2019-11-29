@@ -65,7 +65,7 @@ public class ObjectJumping : MainElement
 
     private IEnumerator TransportCameraTime(GameObject point)
     {
-        float timeLoading = 3;
+        float timeLoading = 1.5f;
         float timeCurrent = 0;
         while (timeCurrent <= timeLoading)
         {
@@ -80,9 +80,9 @@ public class ObjectJumping : MainElement
     {
         if (activePoint)
         {
+            activePoint = false;
             StopCoroutine(transport);
             pointerLoading.fillAmount = 0;
-            activePoint = false;
             AudioSource.PlayClipAtPoint(Resources.Load<AudioClip>("Sounds/TouchDown"), mainApp.mainController.parentCamera.transform.position);
             StartCoroutine(ChangePoint(point));
         }
