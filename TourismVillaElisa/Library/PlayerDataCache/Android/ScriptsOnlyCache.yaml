@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - MainView
     - ONSPSettings
     - ObjectJumping
+    - StartApp
     Oculus.VR.Editor.dll:
     - OVRConfig
     Oculus.VR.dll:
@@ -19,9 +20,11 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.OVRPhysicsRaycaster
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -58,8 +61,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
-    - Class: 109
-      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 9802}
     - Class: 114
@@ -75,8 +76,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10442}
     - Class: 114
-      Script: {instanceID: 10518}
-    - Class: 114
       Script: {instanceID: 10614}
     - Class: 114
       Script: {instanceID: 10666}
@@ -90,8 +89,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11794}
     - Class: 114
       Script: {instanceID: 11828}
-    - Class: 114
-      Script: {instanceID: 11840}
     - Class: 114
       Script: {instanceID: 11910}
     - Class: 114
@@ -115,6 +112,79 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 258
+      Script: {instanceID: 0}
+    Assets/Scenes/Start.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9802}
+    - Class: 114
+      Script: {instanceID: 9868}
+    - Class: 114
+      Script: {instanceID: 9914}
+    - Class: 114
+      Script: {instanceID: 10004}
+    - Class: 114
+      Script: {instanceID: 10024}
+    - Class: 114
+      Script: {instanceID: 10078}
+    - Class: 114
+      Script: {instanceID: 10518}
+    - Class: 114
+      Script: {instanceID: 10614}
+    - Class: 114
+      Script: {instanceID: 10666}
+    - Class: 114
+      Script: {instanceID: 10726}
+    - Class: 114
+      Script: {instanceID: 11168}
+    - Class: 114
+      Script: {instanceID: 11774}
+    - Class: 114
+      Script: {instanceID: 11794}
+    - Class: 114
+      Script: {instanceID: 11840}
+    - Class: 114
+      Script: {instanceID: 11910}
+    - Class: 114
+      Script: {instanceID: 38276}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -701,7 +771,7 @@ ScriptsOnlyBuild:
     className: TeleportOrientationHandlerHMD
   - hash:
       serializedVersion: 2
-      Hash: 9187304ffbb8255efa9283472740dadd
+      Hash: 27a62d3dcb9719d3155c31e62fcd52db
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ObjectJumping
@@ -1485,7 +1555,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 39cd538008756776c35cdbd03ecfda95
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StartApp
   platform: 13
   scenePathNames:
+  - Assets/Scenes/Start.unity
   - Assets/Scenes/Main.unity
   playerPath: C:/Users/GeoInnovacionPro/Documents/GitHub/tourismVillaElisa/TourismVillaElisa/TourismVullaElisa.apk

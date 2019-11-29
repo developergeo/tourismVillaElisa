@@ -9,6 +9,8 @@ public class ObjectJumping : MainElement
     private bool activePoint = true;
     private Renderer myRenderer;
 
+    public string url = "";
+
     public Material inactiveMaterial;
     public Material gazedAtMaterial;
 
@@ -32,6 +34,7 @@ public class ObjectJumping : MainElement
             activePoint = false;
             point.SetActive(true);
             AudioSource.PlayClipAtPoint(Resources.Load<AudioClip>("Sounds/TouchDown"), mainApp.mainController.parentCamera.transform.position);
+
             StartCoroutine(ChangePoint(point));
         }
     }
