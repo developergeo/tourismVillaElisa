@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ObjectJumping : MainElement
 {
     public Vector3 rotate;
-    private bool activePoint = true;
+    public bool activePoint = true;
     private Renderer myRenderer;
 
     private Image pointerLoading;
@@ -81,6 +81,7 @@ public class ObjectJumping : MainElement
         if (activePoint)
         {
             activePoint = false;
+            Debug.Log("Algo pasa");
             StopCoroutine(transport);
             pointerLoading.fillAmount = 0;
             AudioSource.PlayClipAtPoint(Resources.Load<AudioClip>("Sounds/TouchDown"), mainApp.mainController.parentCamera.transform.position);
@@ -92,7 +93,6 @@ public class ObjectJumping : MainElement
     {
         mainApp.mainController.parentCamera.transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         mainApp.mainController.ChangeTexture(point, gameObject);
-        activePoint = true;
 
         yield return null;
 

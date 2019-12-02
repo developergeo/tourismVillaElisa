@@ -59,37 +59,37 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9786}
+      Script: {instanceID: 9788}
     - Class: 114
-      Script: {instanceID: 9814}
+      Script: {instanceID: 9816}
     - Class: 114
-      Script: {instanceID: 9958}
+      Script: {instanceID: 9960}
     - Class: 114
-      Script: {instanceID: 9968}
+      Script: {instanceID: 9970}
     - Class: 114
-      Script: {instanceID: 10014}
+      Script: {instanceID: 10016}
     - Class: 114
-      Script: {instanceID: 10098}
+      Script: {instanceID: 10100}
     - Class: 114
-      Script: {instanceID: 10184}
+      Script: {instanceID: 10186}
     - Class: 114
-      Script: {instanceID: 10212}
+      Script: {instanceID: 10214}
     - Class: 114
-      Script: {instanceID: 10448}
+      Script: {instanceID: 10450}
     - Class: 114
-      Script: {instanceID: 10716}
+      Script: {instanceID: 10718}
     - Class: 114
-      Script: {instanceID: 11076}
+      Script: {instanceID: 11078}
     - Class: 114
-      Script: {instanceID: 11216}
+      Script: {instanceID: 11218}
     - Class: 114
-      Script: {instanceID: 11334}
+      Script: {instanceID: 11336}
     - Class: 114
-      Script: {instanceID: 11364}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11714}
+      Script: {instanceID: 11716}
     - Class: 114
-      Script: {instanceID: 11742}
+      Script: {instanceID: 11744}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -130,19 +130,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9786}
+      Script: {instanceID: 9788}
     - Class: 114
-      Script: {instanceID: 9968}
+      Script: {instanceID: 9970}
     - Class: 114
-      Script: {instanceID: 10014}
+      Script: {instanceID: 10016}
     - Class: 114
-      Script: {instanceID: 10448}
+      Script: {instanceID: 10450}
     - Class: 114
-      Script: {instanceID: 10898}
+      Script: {instanceID: 10900}
     - Class: 114
-      Script: {instanceID: 11376}
+      Script: {instanceID: 11378}
     - Class: 114
-      Script: {instanceID: 11780}
+      Script: {instanceID: 11782}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -664,7 +664,7 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: 9187304ffbb8255efa9283472740dadd
+      Hash: b143f11bf4b1d1d5ae4ffc999dffcabd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ObjectJumping
@@ -882,4 +882,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Start.unity
   - Assets/Scenes/Main.unity
-  playerPath: C:/Users/GeoInnovacionPro/Documents/GitHub/tourismVillaElisa/TourismVillaElisaCardboard/HotelBoutiqueVillaElisaKey.apk
+  playerPath: C:/Users/GeoInnovacionPro/Documents/GitHub/tourismVillaElisa/TourismVillaElisaCardboard/VillaElisa.aab

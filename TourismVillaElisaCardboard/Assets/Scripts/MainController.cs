@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 using UnityEngine.VR;
 
@@ -44,13 +45,22 @@ public class MainController : MainElement
         SetBlackoutOpacity(1);
         yield return new WaitUntil(() => backoutImage.color.a == 1);
         point.SetActive(true);
+        UnityWebRequest wr = new UnityWebRequest("file://" + Application.persistentDataPath + "/" + point.gameObject.name + ".jpg");
+        DownloadHandlerTexture texDl = new DownloadHandlerTexture(true);
+        wr.downloadHandler = texDl;
+        yield return wr.SendWebRequest();
+        if (!(wr.isNetworkError || wr.isHttpError))
+        {
+            Texture2D t = texDl.texture;
+            mainApp.mainView.photoApartment.GetComponent<Renderer>().material.mainTexture = t;
+        }
 
-        var fileName = Application.persistentDataPath + "/" + point.gameObject.name + ".jpg";
-        var bytes = File.ReadAllBytes(fileName);
-        var texture = new Texture2D(6080, 3040, TextureFormat.RGBA32, false);
-        texture.LoadImage(bytes);
+        //var fileName = Application.persistentDataPath + "/" + point.gameObject.name + ".jpg";
+        //var bytes = File.ReadAllBytes(fileName);
+        //var texture = new Texture2D(6080, 3040, TextureFormat.RGBA32, false);
+        //texture.LoadImage(bytes);
 
-        mainApp.mainView.photoApartment.GetComponent<Renderer>().material.mainTexture = texture;
+        //mainApp.mainView.photoApartment.GetComponent<Renderer>().material.mainTexture = texture;
         //mainApp.mainView.photoApartment.GetComponent<Renderer>().material.mainTexture = Resources.Load<Texture2D>("Textures/" + point.gameObject.name); ;
         mainApp.mainView.photoApartment.transform.position =
             new Vector3(point.transform.position.x, mainApp.mainView.photoApartment.transform.position.y, point.transform.position.z);
@@ -61,7 +71,10 @@ public class MainController : MainElement
         rotateOld = point.GetComponent<ObjectJumping>().rotate;
 
         if (oldpoint != null)
+        {
             oldpoint.gameObject.SetActive(false);
+            oldpoint.GetComponent<ObjectJumping>().activePoint = true;
+        }
 
         SetBlackoutOpacity(0);
 
